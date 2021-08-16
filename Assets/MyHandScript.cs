@@ -31,7 +31,7 @@ public class MyHandScript : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         //Debug.Log("Enter");
-        if (indexPinchingvalue >= Pinchvalue && (other.gameObject.tag == "Text" || other.gameObject.tag == "KeyBoardControl" || other.gameObject.tag == "Pencil"))
+        if (indexPinchingvalue >= Pinchvalue && (other.gameObject.tag == "Text" || other.gameObject.tag == "KeyBoardControl" || other.gameObject.tag == "Pencil" || other.gameObject.tag == "SampleObject"))
         {
             //Debug.Log("Enter2");
             other.gameObject.transform.parent = gameObject.transform;
@@ -43,7 +43,7 @@ public class MyHandScript : MonoBehaviour
         //    other.gameObject.transform.parent = gameObject.transform;
         //}
 
-        else if (indexPinchingvalue <= Pinchvalue && (other.gameObject.tag == "Text" || other.gameObject.tag == "KeyBoardControl" || other.gameObject.tag == "Pencil"))
+        else if (indexPinchingvalue <= Pinchvalue && (other.gameObject.tag == "Text" || other.gameObject.tag == "KeyBoardControl" || other.gameObject.tag == "Pencil" || other.gameObject.tag == "SampleObject"))
         {
             OtherGameObject = other.gameObject.transform.position;
             other.gameObject.transform.parent = null;
