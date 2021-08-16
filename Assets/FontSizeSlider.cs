@@ -27,6 +27,16 @@ public class FontSizeSlider : MonoBehaviour
         Text.fontSize = value;
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        slider.enabled = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        slider.enabled = false;
+    }
+
 
 
     // Update is called once per frame
