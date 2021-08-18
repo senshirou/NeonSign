@@ -18,6 +18,8 @@ public class Childtest : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.name);
         other.gameObject.transform.parent = gameObject.transform;
+        
     }
 }

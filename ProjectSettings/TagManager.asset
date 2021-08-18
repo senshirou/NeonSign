@@ -9,6 +9,8 @@ TagManager:
   - Pencil
   - OVRHand
   - SampleObject
+  - MenuButton
+  - ObjectButton
   layers:
   - Default
   - TransparentFX
