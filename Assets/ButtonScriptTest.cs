@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
+using TMPro;
 
 
 [RequireComponent(typeof(BoxCollider))]
@@ -17,8 +18,12 @@ public class ButtonScriptTest : MonoBehaviour
     [SerializeField] GameObject NeonPictureSample;
     bool ImageContinuesStop = true;
     //[SerializeField] GameObject positions;
-    
-    
+
+
+    [SerializeField] GameObject MenuButtonObject;
+    [SerializeField] GameObject Menu;
+
+    [SerializeField]TextMeshProUGUI MenuText;
     
 
     private void Start()
@@ -26,8 +31,7 @@ public class ButtonScriptTest : MonoBehaviour
         _Button = GetComponent<Button>();
         
         Debug.Log(transform.position);
-        
-        
+
     }
 
 
@@ -40,11 +44,28 @@ public class ButtonScriptTest : MonoBehaviour
             WaitingCircle.fillAmount += 0.01f;
         }
 
-        else if(WaitingCircle.fillAmount >= 1f && ImageContinuesStop == true)
+        else if(WaitingCircle.fillAmount >= 1f && ImageContinuesStop == true && MenuText.text == "Object")
         {
             Instantiate(NeonPictureSample,transform.position , NeonPictureSample.transform.rotation);
             ImageContinuesStop = false;
         }
+
+        else if (WaitingCircle.fillAmount >= 1f && MenuText.text == "Menu")
+        {
+            //各々のモードをONにする
+            MenuButtonObject.SetActive(true);        
+        }
+
+        else if(WaitingCircle.fillAmount >= 1f && MenuText.text =="Hide")
+        {
+            //MenuObjedtを非表示にする
+            MenuButtonObject.SetActive(false);
+        }
+
+        string a = other.gameObject.name;
+        
+
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -57,6 +78,9 @@ public class ButtonScriptTest : MonoBehaviour
             WaitingCircle.fillAmount = 0;
             ImageContinuesStop = true;
         }
+
+        Debug.Log("Exit");
+
     }
 }
 
