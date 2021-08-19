@@ -21,7 +21,9 @@ public class ButtonScriptTest : MonoBehaviour
 
 
     [SerializeField] GameObject MenuButtonObject;
+
     [SerializeField] GameObject Menu;
+    [SerializeField] GameObject GroupObject;
 
     [SerializeField]TextMeshProUGUI MenuText;
     
@@ -53,7 +55,16 @@ public class ButtonScriptTest : MonoBehaviour
         else if (WaitingCircle.fillAmount >= 1f && MenuText.text == "Menu")
         {
             //各々のモードをONにする
-            MenuButtonObject.SetActive(true);        
+            MenuButtonObject.SetActive(true);
+            Menu.SetActive(false);
+        }
+
+        else if(WaitingCircle.fillAmount >= 1f && MenuText.text == "Back")
+        {
+            Menu.SetActive(true);
+            GroupObject.SetActive(false);
+            
+
         }
 
         else if(WaitingCircle.fillAmount >= 1f && MenuText.text =="Hide")
