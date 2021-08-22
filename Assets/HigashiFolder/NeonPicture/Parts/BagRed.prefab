@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 762836734977598323}
   - component: {fileID: 3277998263716795199}
   - component: {fileID: 2679327085850867666}
+  - component: {fileID: 4765238889290732969}
   m_Layer: 0
   m_Name: BagRed
   m_TagString: SampleObject
@@ -472,6 +473,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4765238889290732969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032403664670168372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6976537174067100519
 GameObject:
   m_ObjectHideFlags: 0

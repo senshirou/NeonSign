@@ -659,6 +659,7 @@ GameObject:
   - component: {fileID: 5205985682256995849}
   - component: {fileID: 258148961828104496}
   - component: {fileID: 4451731965499498016}
+  - component: {fileID: 3030000809814487506}
   m_Layer: 0
   m_Name: HotDeal
   m_TagString: SampleObject
@@ -741,6 +742,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09044695, y: 0.092428066, z: 0.02}
   m_Center: {x: 0.008021254, y: 0.004535768, z: -2.9666005e-18}
+--- !u!114 &3030000809814487506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3295982428527866347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3642886145213445576
 GameObject:
   m_ObjectHideFlags: 0

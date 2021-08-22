@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 2028847670154836466}
   - component: {fileID: 1952761914236475027}
   - component: {fileID: 9056585235000134724}
+  - component: {fileID: -7864082944697717010}
   m_Layer: 0
   m_Name: LoveSweet
   m_TagString: SampleObject
@@ -1071,6 +1072,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09044695, y: 0.092428066, z: 0.02}
   m_Center: {x: 0.008021254, y: 0.004535768, z: -2.9666005e-18}
+--- !u!114 &-7864082944697717010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088843185367140538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3491881791782730765
 GameObject:
   m_ObjectHideFlags: 0

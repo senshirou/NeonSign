@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 3265705031625982886}
   - component: {fileID: 4789141016509052436}
   - component: {fileID: 3471919351076244996}
+  - component: {fileID: -2692315889702247386}
   m_Layer: 0
   m_Name: OnlyToday
   m_TagString: SampleObject
@@ -1049,6 +1050,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09044695, y: 0.092428066, z: 0.02}
   m_Center: {x: 0.008021254, y: 0.004535768, z: -2.9666005e-18}
+--- !u!114 &-2692315889702247386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996112840265384782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8137797949754909897
 GameObject:
   m_ObjectHideFlags: 0

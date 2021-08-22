@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class FontSizeSlider : MonoBehaviour
 {
     TextMeshPro Text;
+    GameObject SampleObject;
     Slider slider;
 
     // Start is called before the first frame update
@@ -22,6 +23,13 @@ public class FontSizeSlider : MonoBehaviour
         slider.value = Text.fontSize;
     }
 
+    public void GameObjectGetComponent(string GameObjectName)
+    {
+        SampleObject = GameObject.Find(GameObjectName);
+        slider.onValueChanged.AddListener(OnsliderObject);
+        slider.value = SampleObject.transform.localScale.x;
+    }
+
     void Onslider(float value)
     {
         Text.fontSize = value;
@@ -35,6 +43,11 @@ public class FontSizeSlider : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         slider.enabled = false;
+    }
+
+    void OnsliderObject(float value)
+    {
+        SampleObject.transform.localScale = new Vector3(value, value, value);
     }
 
 
