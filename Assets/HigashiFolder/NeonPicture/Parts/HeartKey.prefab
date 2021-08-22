@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5243294074460276892}
   - component: {fileID: 3535403483628525709}
   - component: {fileID: 7213668232672711577}
+  - component: {fileID: 6013158655070217783}
   m_Layer: 0
   m_Name: HeartKey
   m_TagString: SampleObject
@@ -146,6 +147,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6013158655070217783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812275148904000105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8071822431742099764
 GameObject:
   m_ObjectHideFlags: 0

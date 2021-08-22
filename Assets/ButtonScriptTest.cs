@@ -26,7 +26,13 @@ public class ButtonScriptTest : MonoBehaviour
     [SerializeField] GameObject GroupObject;
 
     [SerializeField]TextMeshProUGUI MenuText;
-    
+
+    FontSizeSlider _FontSizeSlider;
+
+    int SampleObjectCount;
+    int SampleObjectInsantiateLimit;
+
+   
 
     private void Start()
     {
@@ -39,6 +45,8 @@ public class ButtonScriptTest : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        SampleObjectCount = GameObject.FindGameObjectsWithTag("SampleObject").Length;
+
         if (other.gameObject.tag == "OVRHand")
         {
             _Button.enabled = true;
@@ -46,9 +54,11 @@ public class ButtonScriptTest : MonoBehaviour
             WaitingCircle.fillAmount += 0.01f;
         }
 
-        else if(WaitingCircle.fillAmount >= 1f && ImageContinuesStop == true && MenuText.text == "Object")
+        else if(WaitingCircle.fillAmount >= 1f && ImageContinuesStop == true && MenuText.text == "Object" && SampleObjectCount <= SampleObjectInsantiateLimit)
         {
-            Instantiate(NeonPictureSample,transform.position , NeonPictureSample.transform.rotation);
+
+            Instantiate(NeonPictureSample, transform.position, NeonPictureSample.transform.rotation);
+
             ImageContinuesStop = false;
         }
 
@@ -57,12 +67,18 @@ public class ButtonScriptTest : MonoBehaviour
             //各々のモードをONにする
             MenuButtonObject.SetActive(true);
             Menu.SetActive(false);
+            _Button.enabled = false;
+            WaitingCircle.enabled = false;
+            WaitingCircle.fillAmount = 0;
         }
 
         else if(WaitingCircle.fillAmount >= 1f && MenuText.text == "Back")
         {
             Menu.SetActive(true);
             GroupObject.SetActive(false);
+            _Button.enabled = false;
+            WaitingCircle.enabled = false;
+            WaitingCircle.fillAmount = 0;
             
 
         }
@@ -72,6 +88,8 @@ public class ButtonScriptTest : MonoBehaviour
             //MenuObjedtを非表示にする
             MenuButtonObject.SetActive(false);
         }
+
+        
 
         string a = other.gameObject.name;
         

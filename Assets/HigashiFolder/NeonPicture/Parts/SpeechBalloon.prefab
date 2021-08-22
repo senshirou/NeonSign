@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1485590062994789922}
   - component: {fileID: 815546665424714969}
   - component: {fileID: 1167473319389812713}
+  - component: {fileID: 3966913382855861041}
   m_Layer: 0
   m_Name: SpeechBalloon
   m_TagString: SampleObject
@@ -144,6 +145,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3966913382855861041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2496476303564705649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3546526697075673861
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
+using System;
 
 public class MojiInputScript : MonoBehaviour
 {
@@ -32,7 +33,16 @@ public class MojiInputScript : MonoBehaviour
         if(StopTime == true)
         {
             MyAlphabet = gameObject.name;
-            Tmpro.text += MyAlphabet;
+            try
+            {
+                Tmpro.text += MyAlphabet;
+            }
+
+            catch(NullReferenceException e)
+            {
+                Debug.Log("•¶Žš‚ðˆ¬‚Á‚Ä‚­‚¾‚³‚¢");
+            }
+            //Tmpro.text += MyAlphabet;
             StopTimeText(0.5f).Forget();
         }
         

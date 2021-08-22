@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1822193580545835523}
   - component: {fileID: 5204390866481444440}
   - component: {fileID: 8742398282859253479}
+  - component: {fileID: 4908852156616215686}
   m_Layer: 0
   m_Name: BagYellow
   m_TagString: SampleObject
@@ -145,6 +146,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4908852156616215686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149079037647457919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a5b48b5d7a3c4f9b10b18894676e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3636687336409449233
 GameObject:
   m_ObjectHideFlags: 0
